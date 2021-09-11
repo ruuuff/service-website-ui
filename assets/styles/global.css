@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --white: #fff;
+  --black: #000;
+  --gray: #656565;
+
+  --blue: #5b86e5;
+  --blue-light: #36d1dc;
+  --blue-dark: #30306c;
+}
+
+body,
+button {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 103rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+a,
+ul,
+button,
+body {
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

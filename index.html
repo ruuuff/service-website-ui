@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Service Website</title>
 
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -29,8 +36,8 @@
         </ul>
       </nav>
 
-      <div class="auth-buttons">
-        <ul>
+      <div>
+        <ul class="auth-buttons">
           <li class="auth-item">
             <button>Log in</button>
           </li>
@@ -43,40 +50,39 @@
   </header>
 
   <main id="main">
+    <div class="container">
       <section class="first-section">
-        <div class="container">
-          <header class="intro">
-            <div class="content">
-              <h1>Shape your ideas and<br class="lb">prove your concept</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br class="lb">Augue nullam vestibulum, suscipit mi sed mauris nibh.</p>
-              <div class="btn-container">
-                <a href="#">Join Now</a>
-                <a href="#">
-                  <img src="./assets/images/icons/play.svg" alt="Join Now">
-                </a>
-              </div>
+        <div class="intro">
+          <div class="content">
+            <h1>Shape your ideas and <br class="line-breaker"> prove your concept</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br class="lb"> Augue nullam vestibulum, suscipit mi sed mauris nibh.</p>
+            <div class="btn-container">
+              <a href="#" class="btn">Join Now</a>
+              <a href="#" class="btn-img">
+                <img src="./assets/images/icons/play.svg" alt="Join Now">
+              </a>
             </div>
+          </div>
 
-            <div class="image-container">
-              <img src="./assets/images/girl-with-laptop.png" alt="Girl With Laptop">
-            </div>
-          </header>
-
-          <article class="customers">
-            <h2>Our Happy Clients</h2>
-            <div class="work-to">
-              <img src="./assets/images/amazon.png" alt="Amazon">
-              <img src="./assets/images/microsoft.png" alt="Microsoft">
-              <img src="./assets/images/sony.png" alt="Sony">
-              <img src="./assets/images/intel.png" alt="Intel">
-            </div>
-
-            <h2>An all-in-one online design format<br>that’s smart, simple and fast</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat. Id vitae libero malesuada netus etiam quis pretium. Nunc egestas urna turpis nulla in aliquam vestibulum potenti in.</p>
-          </article>
-
-          <div class="bg"></div>
+          <div class="image-container">
+            <img src="./assets/images/girl-with-laptop.png" alt="Girl With Laptop">
+          </div>
         </div>
+
+        <article class="customers">
+          <h2>Our Happy Clients</h2>
+          <div class="work-to">
+            <img src="./assets/images/amazon.png" alt="Amazon">
+            <img src="./assets/images/microsoft.png" alt="Microsoft">
+            <img src="./assets/images/sony.png" alt="Sony">
+            <img src="./assets/images/intel.png" alt="Intel">
+          </div>
+
+          <h2>An all-in-one online design format<br>that’s smart, simple and fast</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat. Id vitae libero malesuada netus etiam quis pretium. Nunc egestas urna turpis nulla in aliquam vestibulum potenti in.</p>
+        </article>
+
+        <div class="bg"></div>
       </section>
 
       <section class="secondary-section">
@@ -93,7 +99,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi</p>
                 <div class="button-container">
-                  <button>Learn More</button>
+                  <a>Learn More</a>
                 </div>
               </div>
               <div class="services-image-container">
@@ -107,7 +113,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi</p>
                 <div class="button-container">
-                  <button>Learn More</button>
+                  <a>Learn More</a>
                 </div>
               </div>
               <div class="services-image-container">
@@ -185,66 +191,71 @@
           </section>
         </div>
       </section>
+    </div>
   </main>
 
   <footer>
-    <ul class="footer-list">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">How it works</a>
-      </li>
-      <li>
-        <a href="#">Our experts</a>
-      </li>
-      <li>
-        <a href="#">Become a customer</a>
-      </li>
-    </ul>
+    <div class="container">
 
-    <ul class="footer-list">
-      <li>
-        <a href="#">Public reviews</a>
-        <a href="#">Privacy guide</a>
-        <a href="#">Team conditions</a>
-        <a href="#">Help & support</a>
-      </li>
-    </ul>
-
-    <ul class="footer-list">
-      <li>
-        Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Lorem ipsum dolor sit amet, lit.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet, consectetur 
-      </li>
-    </ul>
-    <div class="footer-container">
-      <p>Lorem ipsum dolor sit amet, consectetur</p>
-
-      <ul class="social-list">
+      <ul class="footer-list">
         <li>
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
+          <a href="#">How it works</a>
         </li>
         <li>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
+          <a href="#">Our experts</a>
         </li>
         <li>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
+          <a href="#">Become a customer</a>
         </li>
       </ul>
+  
+      <ul class="footer-list">
+        <li>
+          <a href="#">Public reviews</a>
+          <a href="#">Privacy guide</a>
+          <a href="#">Team conditions</a>
+          <a href="#">Help & support</a>
+        </li>
+      </ul>
+  
+      <ul class="footer-list">
+        <li>
+          Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Lorem ipsum dolor sit amet, lit.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur 
+        </li>
+      </ul>
+
+      <div class="footer-container">
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
+  
+        <ul class="social-list">
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
