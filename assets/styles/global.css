@@ -10,6 +10,7 @@
   --white: #fff;
   --black: #000;
   --gray: #656565;
+  --gray-2: #c4c4c4;
 
   --blue: #5b86e5;
   --blue-light: #36d1dc;
@@ -24,7 +25,7 @@ button {
 }
 
 .container {
-  max-width: 103rem;
+  max-width: 106rem;
   width: 90%;
   margin: 0 auto;
 }

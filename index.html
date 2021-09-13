@@ -11,7 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -72,17 +72,15 @@
         <article class="customers">
           <h2>Our Happy Clients</h2>
           <div class="work-to">
-            <img src="./assets/images/amazon.png" alt="Amazon">
-            <img src="./assets/images/microsoft.png" alt="Microsoft">
-            <img src="./assets/images/sony.png" alt="Sony">
-            <img src="./assets/images/intel.png" alt="Intel">
+            <img class="amazon" src="./assets/images/amazon.png" alt="Amazon">
+            <img class="microsoft" src="./assets/images/microsoft.png" alt="Microsoft">
+            <img class="sony" src="./assets/images/sony.png" alt="Sony">
+            <img class="intel" src="./assets/images/intel.png" alt="Intel">
           </div>
 
           <h2>An all-in-one online design format<br>that’s smart, simple and fast</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat. Id vitae libero malesuada netus etiam quis pretium. Nunc egestas urna turpis nulla in aliquam vestibulum potenti in.</p>
         </article>
-
-        <div class="bg"></div>
       </section>
 
       <section class="secondary-section">
@@ -98,10 +96,11 @@
                 <h2>Inset Blocks</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi</p>
-                <div class="button-container">
-                  <a>Learn More</a>
+                <div class="btn-container">
+                  <a class="btn">Learn More</a>
                 </div>
               </div>
+
               <div class="services-image-container">
                 <img src="./assets/images/blocks.png" alt="Insert Blocks">
               </div>
@@ -112,8 +111,8 @@
                 <h2>Built-in Templates</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi, dignissim a sit molestie. Eget dolor gravida sit turpis vulputate ac netus nulla volutpat</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi</p>
-                <div class="button-container">
-                  <a>Learn More</a>
+                <div class="btn-container">
+                  <a class="btn">Learn More</a>
                 </div>
               </div>
               <div class="services-image-container">
@@ -123,12 +122,10 @@
           </section>
 
           <section class="services-two">
-            <header>
-              <h2>Our Services</h2>
-            </header>
+            <h2>Our Services</h2>
 
             <div class="services-container">
-              <div class="service-item item_one">
+              <div class="service-item item-one">
                 <h2>Research</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper eget nisi</p>
               </div>
@@ -155,9 +152,7 @@
           </section>
 
           <section class="services-three">
-            <header>
-              <h3>What our users think</h3>
-            </header>
+            <h3>What our users think</h3>
 
             <div class="testemonial-container">
               <div class="testimonial-wrapper">
@@ -178,13 +173,13 @@
                 <div class="ball ball-five"></div>
                 <div class="ball ball-six"></div>
               </div>
-
-              <div class="testimonial-list">
-                <ul class="change-testimonial-container">
-                  <li class="change-testimonial"></li>
-                  <li class="change-testimonial"></li>
-                  <li class="change-testimonial"></li>
-                  <li class="change-testimonial"></li>
+              
+              <div class="testimonial-list-wrapper">
+                <ul class="testimonial-list">
+                  <li class="testimonial-list-item active"></li>
+                  <li class="testimonial-list-item"></li>
+                  <li class="testimonial-list-item"></li>
+                  <li class="testimonial-list-item"></li>
                 </ul>
               </div>
             </div>
@@ -197,40 +192,49 @@
   <footer>
     <div class="container">
 
-      <ul class="footer-list">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">How it works</a>
-        </li>
-        <li>
-          <a href="#">Our experts</a>
-        </li>
-        <li>
-          <a href="#">Become a customer</a>
-        </li>
-      </ul>
-  
-      <ul class="footer-list">
-        <li>
-          <a href="#">Public reviews</a>
-          <a href="#">Privacy guide</a>
-          <a href="#">Team conditions</a>
-          <a href="#">Help & support</a>
-        </li>
-      </ul>
-  
-      <ul class="footer-list">
-        <li>
-          Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Lorem ipsum dolor sit amet, lit.
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur 
-        </li>
-      </ul>
+      <div class="footer-lists">
 
-      <div class="footer-container">
+        <ul class="footer-list footer-item1">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">How it works</a>
+          </li>
+          <li>
+            <a href="#">Our experts</a>
+          </li>
+          <li>
+            <a href="#">Become a customer</a>
+          </li>
+        </ul>
+    
+        <ul class="footer-list footer-item2">
+          <li>
+            <a href="#">Public reviews</a>
+          </li>
+          <li>
+            <a href="#">Privacy guide</a>
+          </li>
+          <li>
+            <a href="#">Team conditions</a>
+          </li>
+          <li>
+            <a href="#">Help & support</a>
+          </li>
+        </ul>
+    
+        <ul class="footer-list footer-item3">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Lorem ipsum dolor sit amet, lit.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet, consectetur 
+          </li>
+        </ul>
+      </div>
+
+      <div class="social-container">
         <p>Lorem ipsum dolor sit amet, consectetur</p>
   
         <ul class="social-list">
