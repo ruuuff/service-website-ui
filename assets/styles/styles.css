@@ -91,7 +91,7 @@
 }
 
 .first-section .intro .content p {
-  font-size: 1.8rem;
+  font-size: var(--small);
   margin-top: 1.4rem;
 }
 
@@ -100,25 +100,6 @@
   flex-direction: row;
   align-items: center;
   margin-top: 2.4rem;
-}
-
-.first-section .intro .content .btn {
-  background-image: linear-gradient(
-    263.85deg,
-    var(--blue-light) 0%,
-    var(--blue) 50%,
-    var(--blue-light) 100%
-  );
-  background-size: 200%;
-  color: var(--white);
-  font-size: 2.5rem;
-  border-radius: 10px;
-  padding: 1.3rem 4.1rem;
-  transition: background-position 0.4s ease;
-}
-
-.first-section .intro .content .btn:hover {
-  background-position: right;
 }
 
 .first-section .intro .content .btn-img {
@@ -141,6 +122,7 @@
 }
 
 .first-section .intro .image-container img {
+  width: 100%;
   max-width: 36.1rem;
   display: inline-block;
   margin: 0 5.3rem 0 auto;
@@ -157,7 +139,11 @@
   max-width: 77.5rem;
   display: grid;
   gap: 2.8rem;
-  grid-template-columns: 14.3rem 22.1rem 16.9rem 11.7rem;
+  grid-template-columns:
+    minmax(auto, 14.3rem)
+    minmax(auto, 22.1rem)
+    minmax(auto, 16.9rem)
+    minmax(auto, 11.7rem);
   align-items: center;
 }
 
@@ -226,51 +212,13 @@
 
 .services-one .service-item .content .btn-container {
   margin-top: 3.6rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.services-one .service-item .content .btn-container .btn {
-  padding: 1.3rem 2.8rem;
-  border: 1px solid rgba(0, 0, 0, 0);
-  font-weight: 300;
-  font-size: 2.5rem;
-  border-radius: 10px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.services-one .service-item .content .btn-container .btn:hover {
-  color: var(--white);
-}
-
-.services-one .service-item .content .btn-container .btn::before {
-  content: "";
-  position: absolute;
-  background-color: var(--white);
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  border-radius: 10px;
-  z-index: -1;
-  transition: 0.2s ease;
-}
-
-.services-one .service-item .content .btn-container .btn:hover::before {
-  background-color: transparent;
-}
-
-.services-one .service-item .content .btn-container .btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 10px;
-  background-image: linear-gradient(264.33deg, #5b86e5 0.71%, #36d1dc 100%);
-  background-size: cover;
-  z-index: -2;
+.services-one .service-item .services-image-container {
+  display: flex;
+  align-items: center;
 }
 
 .services-one .service-item .services-image-container img {
@@ -294,18 +242,17 @@
 
 .services-two .services-container {
   display: grid;
-  grid-template-columns:
-    minmax(auto, 33.4rem)
-    minmax(auto, 16.3rem)
-    minmax(auto, 33.4rem);
+  grid-template-columns: 34.39% 16.78% 34.39%;
   grid-template-rows: repeat(2, minmax(auto, 28.2rem));
   grid-gap: 7rem;
   align-items: center;
   justify-content: center;
-  margin-top: 6.8rem;
+  margin: 6.8rem auto 0;
+  width: 100%;
+  max-width: 97.1rem;
 }
 
-.service-item {
+.services-two .service-item {
   padding: 6.6rem 2.6rem 0;
   width: 100%;
   height: 100%;
@@ -313,7 +260,7 @@
   background-size: contain;
 }
 
-.service-item h2 {
+.services-two .service-item h2 {
   margin-bottom: 2.6rem;
   background: -webkit-linear-gradient(#5b86e5, #36d1dc);
   background-clip: text;
@@ -321,42 +268,42 @@
   -webkit-text-fill-color: transparent;
 }
 
-.service-item.item-one,
-.service-item.item-three {
+.services-two .service-item.item-one,
+.services-two .service-item.item-three {
   background-image: url("../images/service-bg-left.png");
 }
 
-.service-item.item-two,
-.service-item.item-four {
+.services-two .service-item.item-two,
+.services-two .service-item.item-four {
   background-image: url("../images/service-bg-right.png");
 }
 
-.service-item.item-one {
+.services-two .service-item.item-one {
   grid-column: 1;
   grid-row: 1;
 }
 
-.service-item.item-two {
+.services-two .service-item.item-two {
   grid-column: 3;
   grid-row: 1;
 }
 
-.service-item.item-three {
+.services-two .service-item.item-three {
   grid-column: 1;
   grid-row: 2;
 }
 
-.service-item.item-four {
+.services-two .service-item.item-four {
   grid-column: 3;
   grid-row: 2;
 }
 
-.service-image-container {
+.services-two .service-image-container {
   grid-column: 2;
   grid-row: 1 / span 2;
 }
 
-.service-image-container img {
+.services-two .service-image-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -560,7 +507,7 @@ footer > .container::after {
 }
 
 .social-list li a {
-  font-size: 4.3rem;
+  font-size: var(--social-icon);
   margin: 0 1.9rem;
   color: var(--black);
 }

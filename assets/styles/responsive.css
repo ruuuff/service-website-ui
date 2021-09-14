@@ -1,0 +1,122 @@
+@media (min-width: 1600px) {
+  :root {
+    font-size: 81.25%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-section .intro {
+    grid-template-columns: 55% 45%;
+  }
+
+  .services-two .service-item {
+    padding: 6.6rem 0 0;
+    text-align: center;
+  }
+
+  .services-two .service-item.item-one,
+  .services-two .service-item.item-three {
+    background-image: none;
+  }
+
+  .services-two .service-item.item-two,
+  .services-two .service-item.item-four {
+    background-image: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .first-section::after {
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  .first-section .intro {
+    grid-template-columns: 60% 40%;
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    display: none;
+  }
+
+  .first-section {
+    padding: 8.8rem 0 14.4rem;
+    position: relative;
+  }
+
+  .first-section .intro {
+    grid-template-columns: 100%;
+  }
+
+  .first-section .customers h2:nth-of-type(2) {
+    margin-top: 6.6rem;
+  }
+
+  .first-section .intro .image-container {
+    display: none;
+  }
+
+  .services-one {
+    margin-top: 4.4rem;
+  }
+
+  .services-one .service-item {
+    text-align: center;
+    grid-template-columns: 80%;
+    justify-content: center;
+    gap: 0;
+    padding: 4.6rem 2.6rem 0;
+  }
+
+  .services-one .service-item + .service-item {
+    margin-top: 8.6rem;
+  }
+
+  .services-one .service-item .content .btn-container {
+    justify-content: center;
+  }
+
+  .services-one .service-item:nth-of-type(even) {
+    grid-template-columns: 80%;
+  }
+
+  .services-one .service-item:nth-of-type(even) .content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .services-one .service-item .services-image-container {
+    display: none;
+  }
+
+  .services-two .services-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0;
+    margin: 0 auto;
+  }
+
+  .services-two .service-item.item-two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .services-two .service-item.item-four {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .services-two .service-image-container {
+    display: none;
+  }
+}
+
+/* @media (max-width: 480px) {
+
+} */
