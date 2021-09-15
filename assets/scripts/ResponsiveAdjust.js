@@ -18,14 +18,14 @@ const CSSDeclarations = [
   {
     selector: "h1",
     propAndValue: [
-      { property: "font-size", min: 3.5, max: 4.5 },
+      { property: "font-size", min: 2.8, max: 4.5 },
     ]
   },
 
   {
     selector: "h2, h3",
     propAndValue: [
-      { property: "font-size", min: 3, max: 3.5 },
+      { property: "font-size", min: 2.6, max: 3.5 },
     ]
   },
 ]
