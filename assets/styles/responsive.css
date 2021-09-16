@@ -190,6 +190,7 @@
     grid-column: 1;
     grid-row: 2;
     margin-top: 1.6rem;
+    justify-self: flex-start;
   }
 
   .footer-list.footer-item3 {
