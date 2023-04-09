@@ -1,22 +1,13 @@
-# ⚙️ Projeto
+# 📚 Service Website UI
+Codifiquei o protótipo do Figma <a href="https://www.figma.com/community/file/1004640287899449093">Service Website</a> desenvolvido por <a href="https://www.figma.com/@Samiksha">Samiksha</a>, utilizando HTML, CSS, e JavaScript, com design responsivo para garantir uma boa experiência do usuário em diferentes dispositivos e uma ferramenta desenvolvida por mim, em JavaScript, onde a utilizo para escalar o tamanho das fontes se baseando no viewport do usuário.
 
-Codificação da UI <a href="https://www.figma.com/community/file/1004640287899449093">Service Website</a>, com adição da responsividade.
-
-Utilizei a lib <a href="https://github.com/ruuuff/responsive-adjust">Responsive Adjust</a>, desenvolvida por mim, para ajustar o tamanho das fontes em diferentes tamanhos de telas.
-
-# 🖼 Protótipo
-
-<a href="https://www.figma.com/community/file/1004640287899449093">Service Website</a>, por <a href="https://www.figma.com/@Samiksha">Samiksha</a>. ❤
-
-# ✈️ Tecnologias
-
+## ✈️ Tecnologias
 - HTML
 - CSS
 - JavaScript
 
-# 🖥️ Resultado
-
+## 🖥️ Resultado
 <div align="center">
-  <img alt="Service Website" src="https://i.imgur.com/2JQcwKQ.png" width="450px">
-  <p>Confira o resultado: <a href="https://service-website-ruuuff.netlify.app/">Service Website</a></p>
+  <img alt="Service Website UI" src="https://i.imgur.com/2JQcwKQ.png" width="450px">
+  <p>Confira o resultado: <a href="https://service-website-ruuuff.netlify.app/">Service Website UI</a></p>
 </div>
